@@ -2,6 +2,9 @@ html{
     font-size: 62.5%;
 }
 
+*,*:before,*:after{
+    box-sizing: inherit;
+}
 body{
     font-size: 16px; /* 1 rem = 10 px */  
     text-align: center; 
@@ -11,8 +14,47 @@ body{
     text-align: center;
     font-family: "Whisper", cursive;
     
-    
 }
 span{
     color:darkslategray;
+}
+
+.navegacion-p1{
+    background-color:darkslategray;
+    
+}
+.navegacion-p{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navegacion-p a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-p a:hover {
+color:black;
+background-color: forestgreen;
+border-radius: 8px;
+}
+
+.hero{
+    color:rgb(0, 0, 0);
+    display: flex;
+    background-image: url(../img/petro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; <-- para que la imagen ocupe todo el ancho y alto de la ventana del navegador-->
+    height: 400px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
